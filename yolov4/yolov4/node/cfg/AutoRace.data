@@ -1,0 +1,5 @@
+classes=6
+train=/home/weng/work/yolo_ws/src/yolov4/yolov4/node/cfg/train.txt
+valid=/home/weng/work/yolo_ws/src/yolov4/yolov4/node/cfg/val.txt
+names=/home/weng/work/yolo_ws/src/yolov4/yolov4/node/cfg/AutoRace.names
+backup=/home/weng/work/yolo_ws/src/yolov4/yolov4/node/cfg/cfg/weights/
