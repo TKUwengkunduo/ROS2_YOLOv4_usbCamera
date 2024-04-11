@@ -11,9 +11,18 @@ Ensure you have the following installed on your system before proceeding:
 
 ## Setup Instructions
 
+1. **Install Packages**
+   Packages that may need to be installed.
+    ```bash
+    sudo apt update
+    sudo apt install ros-humble-cv-bridge ros-humble-image-transport
+    pip install opencv-python
+    ```
+
+
 ### Creating the ROS2 Workspace
 
-1. **Create a New Workspace**:
+2. **Create a New Workspace**:
    
    Navigate to your desired workspace directory. If you are using Docker, this should be at the same level as your Docker container. Create a new workspace named `yolov4_ws`.
 
@@ -22,7 +31,7 @@ Ensure you have the following installed on your system before proceeding:
     cd ~/yolov4_ws
     ```
 
-2. **Clone the YOLOv4 ROS2 Package**:
+3. **Clone the YOLOv4 ROS2 Package**:
 
    Clone the YOLOv4 package from the provided GitHub repository into the `src` directory of your workspace.
 
@@ -30,7 +39,7 @@ Ensure you have the following installed on your system before proceeding:
     git clone https://github.com/TKUwengkunduo/ROS2_YOLOv4_usbCamera.git src
     ```
 
-3. **Build the Workspace**:
+4. **Build the Workspace**:
 
    Use `colcon` to build the workspace. The `--symlink-install` flag creates symbolic links instead of copying files, saving disk space.
 
