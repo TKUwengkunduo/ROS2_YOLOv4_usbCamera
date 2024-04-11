@@ -57,18 +57,18 @@ ros2 run camera publish_usb_cam
 
 #### Start the YOLOv4 Detection Node
 
-   In a new terminal window, source the ROS2 environment again and then start the YOLOv4 detection node. This node subscribes to the video feed, performs object detection, and publishes the results.
+In a new terminal window, source the ROS2 environment again and then start the YOLOv4 detection node. This node subscribes to the video feed, performs object detection, and publishes the results.
 
-    ```bash
-    source install/setup.bash
-    ros2 run yolov4 yolo_detection
-    ```
+```bash
+source install/setup.bash
+ros2 run yolov4 yolo_detection
+```
 
 #### View Detection Results
 
-   To see the detection results published by the YOLOv4 node, open another terminal window, source the ROS2 environment, and use the `echo` command to listen to the detection results topic.
+To see the detection results published by the YOLOv4 node, open another terminal window, source the ROS2 environment, and use the `echo` command to listen to the detection results topic.
 
-    ```bash
-    source install/setup.bash
-    ros2 topic echo /yolo_detection/detections
-    ```
+```bash
+source install/setup.bash
+ros2 topic echo /yolo_detection/detections
+```
